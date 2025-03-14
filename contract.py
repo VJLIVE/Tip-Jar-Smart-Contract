@@ -39,7 +39,7 @@ class TipJar(ARC4Contract):  # 🏦 This is our main smart contract class!
     # Allows users to send a tip by specifying their name and the tip amount.
     # ---------------------------------------------------
     @abimethod()
-    def send_tip(self, name: UInt64, amount: String) -> None:
+    def send_tip(self, name: String, amount: UInt64) -> None:
         """
         A user sends a tip by providing their name and tip amount.
 
